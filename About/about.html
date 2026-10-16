@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodFlow | From Kitchen to Doorstep</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    
+</head>
+
+<body class="bg-[#fffaf5] overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../index.html" class="hover:text-orange-600">Home</a>
+            <a href="../Menu/menu.html" class="hover:text-orange-600">Menu</a>
+            <a href="../Celebration/celebration.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="./My_orders/orders.html" class="hover:text-orange-600">My Orders</a>
+            <a href="#" class="text-orange-600">About Us</a>
+        </div>
+
+        <!-- Login and Signup Buttons -->
+        <div class="flex items-center gap-5">
+            <a href="../Login/select_role.html" class="rounded-full border border-orange-500 px-6 py-2
+                           text-orange-600 hover:bg-orange-50">
+                Login
+            </a>
+            <a href="../SignUp/index.php" class="rounded-full border border-orange-500 px-5 py-2
+                           text-orange-600 hover:bg-orange-50">
+                Sign Up
+            </a>
+
+        </div>
+    </nav>
+
+<!-- About Us Hero Section -->
+<section class="relative min-h-[450px] overflow-hidden bg-[url('./img/top.png')] bg-cover bg-center bg-no-repeat">
+
+    <!-- Left Side Content -->
+    <div class="relative z-10 flex min-h-[450px] items-center px-8 py-10 md:px-16">
+
+        <div class="max-w-md">
+
+            <!-- Small Heading -->
+            <p class="mb-3 flex items-center gap-3 text-xl font-bold uppercase tracking-wider text-[#ff4d0a]">
+                ABOUT US
+                <span class="h-[2px] w-10 bg-[#ff4d0a]"></span>
+            </p>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl font-extrabold leading-[1.05] text-slate-900 md:text-5xl">
+                Good Food
+                <span class="block text-[#ff4d0a]">Brings People</span>
+                <span class="block text-[#ff4d0a]">Together ♡</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-4 text-sm leading-5 text-slate-800">
+                At FoodFlow, we believe food is more than just a meal —
+                it's a reason to smile, celebrate and create beautiful moments.
+                From everyday cravings to special occasions, we're here to
+                make every bite special.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-5 flex flex-wrap gap-3">
+
+                <a href="../Menu/menu.html"
+                   class="rounded-full bg-[#ff4d0a] px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-700">
+                    Explore Our Menu
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="../Menu/menu.html"
+                   class="rounded-full border border-[#ff4d0a] bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-orange-50">
+                    Order Now
+                    <i class="fa-solid fa-cart-shopping ml-1 text-[#ff4d0a]"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="bg-[url('./img/bg.png')] bg-fixed bg-cover bg-center bg-no-repeat px-6 py-12">
+
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 md:grid-cols-3">
+
+        <!-- Left: Restaurant Image -->
+        <div>
+            <img src="./img/mid.png"
+                 alt="FoodFlow Restaurant"
+                 class="h-64 w-full rounded-3xl object-cover shadow-md">
+        </div>
+
+        <!-- Middle: Our Story -->
+        <div>
+            <h2 class="text-3xl font-extrabold text-slate-900">
+                Our <span class="text-[#ff4d0a]">Story</span>
+            </h2>
+
+            <div class="mb-4 mt-2 h-1 w-12 rounded bg-[#ff4d0a]"></div>
+
+            <p class="text-sm leading-6 text-gray-900">
+                FoodFlow started with a simple idea – to bring delicious
+                food closer to you in the easiest and most convenient way.
+                We wanted to create a place where great food, warm service
+                and joyful moments come together. Whether it's your daily
+                comfort meal or a special celebration, we make sure every
+                order is fresh, tasty and prepared with care.
+            </p>
+        </div>
+
+        <!-- Right: Statistics Cards -->
+        <div class="grid grid-cols-3 gap-3">
+
+            <!-- Happy Customers -->
+            <div class="rounded-2xl bg-[#ffe0c2] p-4 text-center">
+                <i class="fa-solid fa-users text-2xl text-[#ff4d0a]"></i>
+
+                <h3 class="mt-2 text-xl font-extrabold text-slate-900">
+                    1000+
+                </h3>
+
+                <p class="mt-1 text-sm text-gray-700">
+                    Happy Customers
+                </p>
+            </div>
+
+            <!-- Delicious Dishes -->
+            <div class="rounded-2xl bg-[#ffe0c2] p-4 text-center">
+                <i class="fa-solid fa-bell-concierge text-2xl text-[#ff4d0a]"></i>
+
+                <h3 class="mt-2 text-xl font-extrabold text-slate-900">
+                    50+
+                </h3>
+
+                <p class="mt-1 text-sm text-gray-700">
+                    Delicious Dishes
+                </p>
+            </div>
+
+            <!-- Average Rating -->
+            <div class="rounded-2xl bg-[#ffe0c2] p-4 text-center">
+                <i class="fa-solid fa-star text-2xl text-[#ff4d0a]"></i>
+
+                <h3 class="mt-2 text-xl font-extrabold text-slate-900">
+                    4.8★
+                </h3>
+
+                <p class="mt-1 text-sm text-gray-700">
+                     Rating
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose FoodFlow Section -->
+<section class="bg-[url('./img/bg.png')] bg-fixed bg-cover bg-center bg-no-repeat px-6 py-8">
+
+    <!-- Heading -->
+    <h2 class="mb-11 text-center text-3xl font-extrabold text-slate-900">
+        Why Choose <span class="text-[#ff4d0a]">FoodFlow?</span>
+    </h2>
+
+    <!-- Four Feature Cards -->
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Freshly Prepared Food -->
+        <div class="rounded-2xl bg-white p-5 text-center shadow-sm">
+            <div class="mb-3 text-4xl text-[#ff4d0a]">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3 class="font-bold text-slate-900">Freshly Prepared Food</h3>
+            <p class="mt-2 text-sm text-gray-800">
+                Made with quality ingredients and lots of love.
+            </p>
+        </div>
+
+        <!-- Convenient Delivery -->
+        <div class="rounded-2xl bg-white p-5 text-center shadow-sm">
+            <div class="mb-3 text-4xl text-[#ff4d0a]">
+                <i class="fa-solid fa-motorcycle"></i>
+            </div>
+            <h3 class="font-bold text-slate-900">Convenient Delivery</h3>
+            <p class="mt-2 text-sm text-gray-800">
+                Get your favourites delivered to your doorstep.
+            </p>
+        </div>
+
+        <!-- Birthday Specials -->
+        <div class="rounded-2xl bg-white p-5 text-center shadow-sm">
+            <div class="mb-3 text-4xl text-[#ff4d0a]">
+                <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <h3 class="font-bold text-slate-900">Birthday Specials</h3>
+            <p class="mt-2 text-sm text-gray-800">
+                Cakes and celebration combos to make your special days extra memorable.
+            </p>
+        </div>
+
+        <!-- Customer First -->
+        <div class="rounded-2xl bg-white p-5 text-center shadow-sm">
+            <div class="mb-3 text-4xl text-[#ff4d0a]">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3 class="font-bold text-slate-900">Customer First</h3>
+            <p class="mt-2 text-sm text-gray-800">
+                A simple, user-friendly experience with great service and support.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Call-to-Action Banner -->
+    <div class="mx-auto mt-6 flex max-w-7xl flex-col items-center justify-between gap-4
+                rounded-3xl bg-gradient-to-r from-orange-300 to-orange-400
+                px-6 py-6 text-center sm:flex-row sm:text-left">
+
+        <div>
+            <h2 class="text-2xl font-extrabold text-slate-900">
+                Ready to <span class="text-[#ff4d0a]">Treat Yourself ?</span>
+                <span class="text-[#ff4d0a]">♡</span>
+            </h2>
+            <p class="mt-1 text-sm text-slate-800">
+                Delicious food is just a few clicks away!
+            </p>
+        </div>
+
+        
+<a href="../Menu/menu.html" class="inline-block no-underline">
+    <div class="aura aura-gold">
+        <div class="card bg-base-100">
+            <div class="card-body flex-row items-center gap-2 px-6 py-3">
+                <p class="font-bold text-base">Order Now</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</a>
+    </div>
+
+</section>
+
+</body>
+</html>

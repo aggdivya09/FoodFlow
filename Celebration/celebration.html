@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <body class="bg-[#fffaf5] overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../index.html" class="hover:text-orange-600">Home</a>
+            <a href="../Menu/menu.html" class="hover:text-orange-600">Menu</a>
+            <a href="#" class="text-orange-600">Celebrations</a>
+            <a href="./My_orders/orders.html" class="hover:text-orange-600">My Orders</a>
+            <a href="../About/about.html" class="hover:text-orange-600">About Us</a>
+        </div>
+
+        <!-- Login and Signup Buttons -->
+        <div class="flex items-center gap-5">
+            <a href="../Login/select_role.html" class="rounded-full border border-orange-500 px-6 py-2
+                           text-orange-600 hover:bg-orange-50">
+                Login
+            </a>
+            <a href="../SignUp/index.php" class="rounded-full border border-orange-500 px-5 py-2
+                           text-orange-600 hover:bg-orange-50">
+                Sign Up
+            </a>
+
+        </div>
+    </nav>
+    
+<!-- Celebration Banner -->
+<section class="relative w-full overflow-hidden rounded-2xl">
+    
+    <!-- Background Image -->
+    <img  src="./img/bg.png" alt="Chocolate cake celebration" class="w-full h-[280px] object-cover" >
+
+    <!-- Text Overlay -->
+    <div class="absolute inset-0 flex items-center">
+        <div class="w-[58%] text-center px-6 md:px-10">
+
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-[#54200d] leading-tight">
+                Make Every Moment
+            </h2>
+
+            <div class="flex items-center justify-center gap-4 mt-1">
+                <span class="text-[#ff5a0a] text-3xl md:text-5xl"> ❯
+                </span>
+
+                <h1 class="font-serif italic text-3xl md:text-5xl font-bold text-[#f4510b]">
+                    More Delicious
+                </h1>
+            </div>
+
+            <p class="mt-3 ml-28 text-sm md:text-xl font-semibold text-[#54200d]">
+                Special treats for your celebrations
+            </p>
+
+        </div>
+    </div>
+
+</section>
+<main>
+    <!-- Celebration Food Cards -->
+<section class="bg-[#fffaf5] px-3 py-5">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+
+        <!-- 1. Celebration Cake -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p1.png" alt="Celebration Cake"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Celebration Cake</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                Rich and moist chocolate cake for your special moments.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">799</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. Party Pizza -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p2.png" alt="Party Pizza"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Party Pizza (Large)</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                Loaded with toppings, perfect for gatherings.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹499</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 3. Mini Burger -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p3.png" alt="Mini Burger (4 pcs)"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Mini Burger (4 pcs)</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                Juicy cheeseburgers served with crispy fries and delicious dips, perfect for sharing.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹229</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 4.Red Velvet Cake -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p4.png" alt="Red Velvet Cake"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Red Velvet Cake</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                Soft, velvety red cake layered with smooth cream cheese frosting, perfect for special celebrations.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹569</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 5. Valentine's Day Specia -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p5.png" alt="Valentine's Day Special"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Valentine's Day Special</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                 Sweeten your special moments with heart-shaped cookies, chocolate brownies, and chocolate-dipped strawberries made with love.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹249</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 6. Party Snack Box -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p6.png" alt="Party Snack Box"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Party Snack Box</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                A mix of fries, nuggets, onion rings and more.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹399</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 7. Celebration Beverages -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p7.png" alt="Celebration Beverages"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Celebration Beverages (3)</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                A set of refreshing drinks for your celebration.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹149</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- 8. Dessert Platter -->
+        <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-2 shadow-sm transition hover:shadow-md">
+            <img src="./img/p8.png" alt="Dessert Platter"
+                 class="h-36 w-full rounded-xl object-cover">
+
+            <h3 class="mt-2 font-bold text-slate-900">Dessert Platter</h3>
+            <p class="mt-1 text-sm leading-5 text-gray-500">
+                Assorted desserts to make your moments sweeter.
+            </p>
+
+            <div class="mt-auto flex items-center justify-between gap-2 pt-2">
+                <span class="text-xl font-extrabold text-orange-600">₹459</span>
+                <button type="button"
+                        class="rounded-xl bg-orange-600 px-7 py-3 font-bold text-white transition hover:bg-orange-700">
+                    Add
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your role</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-[#fffaf5] m-0 min-h-screen w-full bg-[#fffaf5] bg-[url('./img/bg.png')] bg-cover bg-center bg-fixed bg-no-repeat">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-12 py-4 shadow-sm">
+
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+    </div>
+    </div>
+
+     <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../index.html" class="hover:text-orange-600">Home</a>
+            <a href="./Menu/menu.html" class="hover:text-orange-600">Menu</a>
+            <a href="../Celebration/celebration.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="./My_orders/orders.html" class="hover:text-orange-600">My Orders</a>
+            <a href="../About/about.html" class="hover:text-orange-600">About Us</a>
+        </div>
+
+        <!-- Login and Signup Buttons -->
+        <div class="flex items-center gap-5">
+            <a href="#" class= "rounded-full bg-[#ff4d0a] px-6 py-2 font-semibold text-white transition hover:bg-[#e94305]">
+                Login
+            </a>
+            <a href="../SignUp/index.php" class="rounded-full border border-orange-500 px-6 py-2 text-orange-600 hover:bg-orange-50">
+                Sign Up
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Choose Your Role Heading -->
+    <div class="mb-8 mt-10 text-center">
+
+    <p class="mb-3 flex items-center justify-center gap-3
+              text-xl font-bold uppercase tracking-wide text-[#ff4d0a]">
+        <span class="h-[3px] w-9 bg-[#ff4d0a]"></span>
+        Welcome to FoodFlow
+        <span class="h-[3px] w-9 bg-[#ff4d0a]"></span>
+    </p>
+
+    <h1 class="text-5xl font-extrabold tracking-tight text-slate-900">
+        Choose Your <span class="text-[#ff4d0a]">Role</span>
+    </h1>
+
+    <p class="mt-3 text-xl text-gray-600">
+        Select your account type to continue to login.
+    </p>
+
+    </div>
+
+<!-- Four Role Cards -->
+<div class="mx-auto grid w-[70%] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- Customer -->
+    <div class="rounded-2xl bg-[#ffe0cc] p-5 text-center">
+        <img src="img/customer.png" class="mx-auto h-36 w-full object-contain">
+        <h2 class="text-xl font-bold">Customer</h2>
+        <p class="my-3 min-h-12 text-gray-700">Order food, manage your orders and track deliveries.</p>
+        <a href="../Login/customer.php" class="block rounded-xl bg-[#ff4d0a] p-3 font-semibold text-white">Continue →</a>
+    </div>
+
+    <!-- Restaurant Staff -->
+    <div class="rounded-2xl bg-[#fff5df] p-5 text-center">
+        <img src="img/chef.png" class="mx-auto h-36 w-full object-contain">
+        <h2 class="text-xl font-bold">Restaurant Staff</h2>
+        <p class="my-3 min-h-12 text-gray-700">Manage incoming orders and food preparation.</p>
+        <a href="restaurant.html" class="block rounded-xl bg-[#ff4d0a] p-3 font-semibold text-white">Continue →</a>
+    </div>
+
+    <!-- Delivery Person -->
+    <div class="rounded-2xl bg-[#eaf8ef] p-5 text-center">
+        <img src="img/delivery.png" class="mx-auto h-36 w-full object-contain">
+        <h2 class="text-xl font-bold">Delivery Person</h2>
+        <p class="my-3 min-h-12 text-gray-700">View assigned orders and manage deliveries.</p>
+        <a href="delivery.html" class="block rounded-xl bg-[#ff4d0a] p-3 font-semibold text-white">Continue →</a>
+    </div>
+
+    <!-- Admin -->
+    <div class="rounded-2xl bg-[#f4edff] p-5 text-center">
+        <img src="img/admin.png" class="mx-auto h-36 w-full object-contain">
+        <h2 class="text-xl font-bold">Admin</h2>
+        <p class="my-3 min-h-12 text-gray-700">Manage users, orders and reports.</p>
+        <a href="admin.html" class="block rounded-xl bg-[#ff4d0a] p-3 font-semibold text-white">Continue →</a>
+    </div>
+
+</div>
+</body>
+</html>

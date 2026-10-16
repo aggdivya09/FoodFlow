@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodFlow | From Kitchen to Doorstep</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-[#fffaf5]">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="#" class="text-orange-600">Home</a>
+            <a href="./Menu/menuafterlogin.html" class="hover:text-orange-600">Menu</a>
+            <a href="./Celebration/celebrationaftelogin.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="./My_orders/orders.html" class="hover:text-orange-600">My Orders</a>
+            <a href="./About/aboutafterlogin.html" class="hover:text-orange-600">About Us</a>
+        </div>
+
+        <!-- Customer Profile -->
+        <div class="flex shrink-0 items-center gap-3">
+
+        <!-- Initials Circle -->
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-lg font-bold text-orange-600">
+        DA
+        </div>
+
+        <!-- Customer Name -->
+        <div>
+        <p class="text-base font-bold text-slate-900">
+            Divya Agarwal
+        </p>
+        <p class="text-sm text-gray-500">
+            Customer
+        </p>
+        </div>
+
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <section
+    class="relative flex min-h-[420px] items-center overflow-hidden
+           rounded-xl bg-cover bg-center px-8 py-16 md:px-16"
+    style="background-image: url('images/pizza.png');">
+    <!-- Dark overlay for readable text -->
+    <div class="absolute inset-0 bg-gradient-to-r
+                from-black/85 via-black/50 to-transparent"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-2xl text-white">
+
+        <p class="mb-4 text-sm font-semibold uppercase
+                  tracking-[0.3em] text-orange-400">
+            Good Food • Happier Moments &#128522
+        </p>
+
+        <h1 class="mb-5 text-4xl font-extrabold leading-tight
+                   md:text-5xl">
+            Delicious Food,<br>
+            <span class="text-orange-500">Delivered</span>
+            to Your Doorstep
+        </h1>
+
+        <p class="mb-6 max-w-lg text-base leading-relaxed
+                  text-gray-200 md:text-lg">
+            From fresh ingredients to fast delivery,
+            FoodFlow brings your favourite meals from
+            kitchen to your doorstep.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-4">
+            <a href="#menu"
+               class="rounded-full bg-orange-600 px-7 py-3
+                      font-semibold text-white transition
+                      hover:bg-orange-700">
+                <i class="fa-solid fa-utensils mr-2"></i>
+                Order Now →
+            </a>
+
+            <a href="#menu"
+               class="rounded-full border border-white px-7 py-3
+                      font-semibold text-white transition
+                      hover:bg-white hover:text-black">
+                <i class="fa-regular fa-rectangle-list mr-2"></i>
+                View Menu
+            </a>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- Menu and Special Celebrations Section -->
+    <section class="bg-[#fffaf5] px-6 py-8 md:px-12">
+
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2">
+
+        <!-- Our Menu Card -->
+        <div id="menu"
+             class="relative flex min-h-[210px] items-center overflow-hidden
+                    rounded-2xl bg-[#fff0dc] p-7 shadow-sm">
+
+            <div class="relative z-10 w-1/2">
+                <h2 class="mb-2 text-3xl font-bold text-slate-900">
+                    Our <span class="text-orange-600">Menu</span>
+                </h2>
+
+                <p class="mb-5 text-base leading-relaxed text-gray-700">
+                    Pizzas, burgers, sides, drinks and more
+                </p>
+
+                <a href="./Menu/menuafterlogin.html"
+                   aria-label="Explore our menu"
+                   class="flex h-11 w-11 items-center justify-center
+                          rounded-full bg-orange-600 text-xl text-white
+                          transition hover:bg-orange-700">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Menu Image -->
+            <div class="absolute inset-y-0 right-0 flex w-1/2 items-center">
+                <img src="images/pizza_menu.png"
+                     alt="Burger, fries and drink"
+                     class="h-full w-full object-contain object-right-bottom">
+            </div>
+        </div>
+
+
+        <!-- Special Celebrations Card -->
+        <div id="celebrations"
+             class="relative flex min-h-[210px] items-center overflow-hidden
+                    rounded-2xl bg-[#ffe9eb] p-7 shadow-sm">
+
+            <div class="relative z-10 w-1/2">
+                <h2 class="mb-2 text-3xl font-bold leading-tight text-slate-900">
+                    Special
+                    <span class="block text-rose-600">Celebrations</span>
+                </h2>
+
+                <p class="mb-5 text-base leading-relaxed text-gray-700">
+                    Cakes, gifts, decorations and party combos
+                </p>
+
+                <a href="./Celebration/celebrationaftelogin.html"
+                   aria-label="Explore special celebrations"
+                   class="flex h-11 w-11 items-center justify-center
+                          rounded-full bg-rose-600 text-xl text-white
+                          transition hover:bg-rose-700">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Celebrations Image -->
+            <div class="absolute inset-y-0 right-0 flex w-1/2 items-center">
+                <img src="images/celebration.png"
+                     alt="Cake, gifts, balloons and decorations"
+                     class="h-full w-full object-contain object-right-bottom">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Why Choose FoodFlow Section -->
+    <div id="about" class="mx-auto max-w-7xl pb-4 pt-6">
+
+        <!-- Section Heading -->
+        <div class="mb-7 text-center">
+            <p class="mb-2 text-base font-bold uppercase
+                      tracking-[0.3em] text-orange-600">
+                Why Choose FoodFlow
+            </p>
+
+            <h2 class="text-3xl font-bold text-slate-900">
+                Good Food, Great Experience
+            </h2>
+        </div>
+
+
+        <!-- Benefits Grid -->
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Fast Delivery -->
+            <div class="flex items-center gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center
+                            justify-center rounded-full bg-rose-100">
+                    <i class="fa-solid fa-motorcycle text-2xl text-rose-600"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">Fast Delivery</h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                        Hot and fresh at your doorstep
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Fresh Ingredients -->
+            <div class="flex items-center gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center
+                            justify-center rounded-full bg-emerald-100">
+                    <i class="fa-solid fa-leaf text-2xl text-emerald-600"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">Fresh Ingredients</h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                        Quality food you can trust
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Wide Variety -->
+            <div class="flex items-center gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center
+                            justify-center rounded-full bg-amber-100">
+                    <i class="fa-solid fa-utensils text-2xl text-amber-600"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">Wide Variety</h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                        Food for every mood
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Special Occasions -->
+            <div class="flex items-center gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center
+                            justify-center rounded-full bg-purple-100">
+                    <i class="fa-solid fa-users text-2xl text-purple-600"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">Special Occasions</h3>
+                    <p class="mt-1 text-sm text-gray-500">
+                        Cakes & celebration items
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+</body>
+</html>
