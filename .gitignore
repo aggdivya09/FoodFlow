@@ -1,0 +1,5 @@
+google-oauth.json
+/vendor/
+.env
+.env.*
+*.log

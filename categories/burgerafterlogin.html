@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger variety</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-[#fffaf5]">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../index.html" class="hover:text-orange-600">Home</a>
+            <a href="#" class="text-orange-600">Menu</a>
+            <a href="../Celebration/celebration.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="../My_orders/orders.php" class="hover:text-orange-600">My Orders</a>
+            <a href="../About/about.html" class="hover:text-orange-600">About Us</a>
+        </div>
+
+         <!-- Customer Profile -->
+        <div class="flex shrink-0 items-center gap-3">
+
+        <!-- Initials Circle -->
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-lg font-bold text-orange-600">
+        DA
+        </div>
+
+        <!-- Customer Name -->
+        <div>
+        <p class="text-base font-bold text-slate-900">
+            Divya Agarwal
+        </p>
+        <p class="text-sm text-gray-500">
+            Customer
+        </p>
+        </div>
+
+    </nav>
+
+<!-- Burger Hero Banner -->
+<section class="relative h-[380px] w-full overflow-hidden" style="background-image: url('./img/burgerbg.png');
+        background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <div class="absolute inset-0 bg-black/15"></div>
+
+    <!-- Banner Content -->
+    <div class="relative z-10 flex h-full items-center pl-28 pr-10">
+
+    <div class="max-w-2xl text-left">
+
+        <!-- Small Heading -->
+        <p class="mb-4 flex items-center gap-3
+                  text-base font-bold uppercase tracking-[0.25em]
+                  text-[#ff702e]">
+
+            <span class="h-[3px] w-10 bg-[#ff702e]"></span>
+            Freshly Grilled For You
+            <span class="h-[3px] w-9 bg-[#ff702e]"></span>
+
+        </p>
+
+        <!-- Main Heading -->
+        <h1 class="text-6xl font-extrabold leading-tight
+                   tracking-tight text-[#fff1d6]
+                   drop-shadow-lg md:text-7xl">
+
+            Burger
+            <span class="text-[#ff702e]">Delights</span>
+
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-5 max-w-xl text-lg font-semibold
+                  leading-relaxed text-[#fff8ed]
+                  drop-shadow-md md:text-xl">
+            Juicy patties,
+            <span class="text-[#ff702e]">fresh</span>
+            ingredients and bold flavors in every bite.
+        </p>
+
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Burger Collection Heading -->
+<section class="bg-[#fffaf5] px-7 pt-5 pb-4">
+
+    <div class="max-w-full">
+
+        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">
+            Our <span class="text-orange-600">Burger Collection</span>
+        </h2>
+
+        <p class="mt-1 text-base font-medium text-slate-700">
+            Find your perfect burger, freshly prepared just for you.
+        </p>
+
+    </div>
+
+</section>
+<main>
+
+<!-- Burger Collection Cards -->
+<section class="bg-[#fffaf5] px-7 pb-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Card 1 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b1.png" alt="Classic Pizza Burger" class="h-48 w-full rounded-lg object-cover">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Classic Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Classic pizza sauce, melted mozzarella, fresh tomato, onion and Italian herbs in every bite.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹189</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b2.png" alt="Paneer Tikka Pizza Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Paneer Tikka Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Tandoori paneer, melted mozzarella, capsicum, onion and spicy tikka sauce.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹219</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b3.png" alt="Golden Corn Pizza Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Golden Corn Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Sweet corn, melted mozzarella, creamy cheese and zesty Italian seasoning.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹129</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b4.png" alt="Double Cheese Pizza Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Double Cheese Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Crispy veg patty loaded with double mozzarella, cheddar and pizza sauce.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹219</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b5.png" alt="Peri Peri Pizza Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Peri Peri Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Spicy peri-peri patty, melted mozzarella, jalapeños and tangy red sauce.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹149</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b6.png" alt="Pepperoni Pizza Burge" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Pepperoni Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Chicken pepperoni, gooey mozzarella, crispy patty and rich Italian tomato sauce.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹249</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b7.png" alt="Tandoori Chicken Pizza Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Tandoori Chicken Pizza Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Smoky tandoori chicken, melted mozzarella, crunchy capsicum and spicy tikka sauce.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹289</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/b8.png" alt="Onion Ring Crunch Burger" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Onion Ring Crunch Burger</h3>
+                <p class="text-sm text-gray-500 mt-1">Crispy onion rings, gooey melted cheese and smoky mayo in every bite.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹119</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Favourite Toggle -->
+<script>
+function toggleFavourite(button) {
+    const icon = button.querySelector("i");
+
+    icon.classList.toggle("fa-regular");
+    icon.classList.toggle("fa-solid");
+
+    if (icon.classList.contains("fa-solid")) {
+        button.classList.remove("text-gray-500");
+        button.classList.add("text-red-500");
+    } else {
+        button.classList.remove("text-red-500");
+        button.classList.add("text-gray-500");
+    }
+}
+</script>
+
+</main>
+
+
+<script src="../foodflow.js"></script>   <!-- Menu/, categories/, About/, Celebration/, dashboard/ pages -->
+<script src="./foodflow.js"></script>    <!-- indexafterlogin.html (root) -->
+</body>
+</html>

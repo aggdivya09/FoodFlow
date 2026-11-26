@@ -1,3 +1,4 @@
+
 <?php
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
@@ -134,7 +135,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 Login
             </a>
 
-            <a href="../SignUp/index.php"
+            <a href="index.php"
                class="rounded-full bg-[#ff4d0a] px-6 py-2
                       font-semibold text-white hover:bg-[#e94305]">
                 Sign Up

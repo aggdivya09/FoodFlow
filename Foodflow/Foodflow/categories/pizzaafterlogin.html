@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Variety</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body class="bg-[#fffaf5]">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../indexafterlogin.html" class="hover:text-orange-600">Home</a>
+            <a href="#" class="text-orange-600">Menu</a>
+            <a href="../Celebration/celebrationafterlogin.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="../My_orders/orders.php" class="hover:text-orange-600">My Orders</a>
+            <a href="../About/aboutafterlogin.html" class="hover:text-orange-600">About Us</a>
+        </div>
+         <!-- Customer Profile -->
+        <div class="flex shrink-0 items-center gap-3">
+
+        <!-- Initials Circle -->
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-lg font-bold text-orange-600">
+        DA
+        </div>
+
+        <!-- Customer Name -->
+        <div>
+        <p class="text-base font-bold text-slate-900">
+            Divya Agarwal
+        </p>
+        <p class="text-sm text-gray-500">
+            Customer
+        </p>
+        </div>
+
+    </nav>
+
+<!-- Pizza Hero Banner -->
+<section
+    class="relative flex min-h-[280px] items-center justify-center overflow-hidden
+           bg-cover bg-center bg-no-repeat px-6 py-12 md:min-h-[340px]"
+    style="background-image: url('./img/pizzabg.png');"
+>
+    <!-- Subtle overlay for readable text -->
+    <div class="absolute inset-0 bg-black/15"></div>
+
+    <!-- Banner Content -->
+    <div class="relative z-10 mx-auto max-w-2xl translate-x-16 text-center">
+
+        <p class="mb-4 flex items-center justify-center gap-3
+                  text-sm font-bold uppercase tracking-[0.25em]
+                  text-[#ff6b24]">
+            <span class="h-[2px] w-8 bg-[#ff6b24]"></span>
+            Freshly Baked for you
+            <span class="h-[2px] w-8 bg-[#ff6b24]"></span>
+        </p>
+
+        <h1 class="text-4xl font-extrabold leading-tight
+                   tracking-tight text-[#fff1d6]
+                   drop-shadow-lg sm:text-5xl md:text-6xl">
+            A Slice of
+            <span class="text-[#ff702e]">Happiness</span>
+        </h1>
+
+        <p class="mx-auto mt-4 max-w-lg text-base font-medium
+                  leading-relaxed text-[#fff8ed]
+                  drop-shadow-md sm:text-lg">
+            Discover delicious flavors, golden crusts
+            and cheesy goodness in every bite.
+        </p>
+    </div>
+</section>
+<main>
+    
+<!-- Pizza Collection -->
+<section class="w-full bg-[#fffaf5] px-4 py-8 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-none">
+
+        <!-- Section Heading -->
+        <div class="mb-6">
+            <h2 class="text-3xl font-extrabold text-slate-900">
+                Our <span class="text-orange-600">Pizza Collection</span>
+            </h2>
+            <p class="mt-1 text-base text-gray-800">
+                Find your perfect slice, freshly prepared just for you.
+            </p>
+        </div>
+
+        <!-- 20 Pizza Cards -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+            <!-- 1. Margherita -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/margherita.png" alt="Margherita Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Margherita Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Fresh tomatoes, mozzarella and basil.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹149</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 2. Farmhouse -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/farmhouse.png" alt="Farmhouse Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Farmhouse Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Capsicum, onion, mushrooms and cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹249</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 3. Cheese Burst -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/cheeseburst.png" alt="Cheese Burst Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Cheese Burst Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Extra cheese with a creamy, gooey center.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹299</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 4. Pepperoni -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/pepperoni.png" alt="Pepperoni Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Pepperoni Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Savory pepperoni and melted mozzarella.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹329</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 5. Veg Extravaganza -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/extravaganza.png" alt="Veg Extravaganza Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Veg Extravaganza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Colorful vegetables, olives and extra cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹279</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 6. BBQ Chicken -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/chicken.png" alt="BBQ Chicken Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">BBQ Chicken Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Smoky barbecue chicken with herbs and cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹349</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 7. Tandoori Paneer -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/paneertandoor.png" alt="Tandoori Paneer Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Tandoori Paneer Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Spiced paneer, onion and creamy cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹299</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 8. Double Cheese -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/doublecheese.png" alt="Double Cheese Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Double Cheese Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">A cheesy delight with extra mozzarella.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹269</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 9. Peppy Paneer -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/peppypanerr.png" alt="Peppy Paneer Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Peppy Paneer Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Paneer cubes, capsicum and zesty seasoning.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹279</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 10. Mexican Green Wave -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/mexican.png" alt="Mexican Green Wave Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Mexican Green Wave</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Jalapeños, capsicum, onion and Mexican herbs.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹299</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 11. Golden Corn -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/golden.png" alt="Golden Corn Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Golden Corn Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Sweet corn, mozzarella and creamy sauce.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹199</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 12. Paneer Makhani -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/makhnipaneer.png" alt="Paneer Makhani Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Paneer Makhani Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Indian-style paneer with rich makhani sauce.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹319</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 13. Country Feast -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/countryfeast.png" alt="Country Feast Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Country Feast Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">A hearty mix of vegetables, herbs and cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹289</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 14. Achari Do Pyaza -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/acharidopyaz.png" alt="Achari Do Pyaza Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Achari Do Pyaza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Tangy achari flavor with onion and capsicum.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹269</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 15. Chicken Dominator -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/chicken2.png" alt="Chicken Dominator Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Chicken Dominator</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Seasoned chicken and a generous cheesy topping.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹399</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 16. Chicken Fiesta -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/chicken3.png" alt="Chicken Fiesta Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Chicken Fiesta</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Chicken chunks, peppers and flavorful herbs.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹359</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 17. Peri Peri Chicken -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/chicken4.png" alt="Peri Peri Chicken Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Peri Peri Chicken</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Spicy peri-peri chicken with melted cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹379</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 18. Cheese Volcano -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/cheesevolcano.png" alt="Cheese Volcano Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Cheese Volcano</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">A rich cheese-filled center for cheese lovers.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹349</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 19. Four Cheese -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/fourcheese.png" alt="Four Cheese Pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Four Cheese Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">A creamy blend of four delicious cheeses.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹329</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+            <!-- 20. Spicy Paneer Tikka -->
+<article class="relative rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./img/nacho.png" alt="nacho crunch pizza" class="h-40 w-full rounded-lg object-cover">
+                    <button type="button" onclick="toggleFavourite(this)"
+    class="absolute right-4 top-4 z-10 rounded-full bg-white p-2 shadow-md text-gray-500 hover:text-red-500">
+    <i class="fa-regular fa-heart text-xl"></i>
+</button>
+                <h3 class="mt-2 text-sm font-bold">Nacho Crunch Pizza</h3>
+                <p class="mt-1 min-h-8 text-xs text-gray-500">Crunchy tortilla chips, jalapeños, salsa and cheddar cheese.</p>
+                <div class="mt-2 flex items-center justify-between">
+                    <span class="font-extrabold text-orange-600">₹309</span>
+                    <button class="rounded-lg bg-orange-600 px-5 py-2 text-xs font-semibold text-white hover:bg-orange-700">Add</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+</main>
+<!-- Favourite Toggle -->
+<script>
+function toggleFavourite(button) {
+    const icon = button.querySelector("i");
+
+    icon.classList.toggle("fa-regular");
+    icon.classList.toggle("fa-solid");
+
+    if (icon.classList.contains("fa-solid")) {
+        button.classList.remove("text-gray-500");
+        button.classList.add("text-red-500");
+    } else {
+        button.classList.remove("text-red-500");
+        button.classList.add("text-gray-500");
+    }
+}
+</script>
+<script src="../foodflow.js"></script>   <!-- Menu/, categories/, About/, Celebration/, dashboard/ pages -->
+
+</body>
+</html>

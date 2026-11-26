@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
-<body>
-    <body class="bg-[#fffaf5]">
+<body class="bg-[#fffaf5]">
 
     <!-- Navbar -->
     <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
@@ -44,7 +43,7 @@
             <a href="../Celebration/celebrationaftelogin.html" class="hover:text-orange-600">
                 Celebrations
             </a>
-            <a href="./My_orders/orders.html" class="hover:text-orange-600">My Orders</a>
+            <a href="../My_orders/orders.php" class="hover:text-orange-600">My Orders</a>
             <a href="../About/aboutafterlogin.html" class="hover:text-orange-600">About Us</a>
         </div>
          <!-- Customer Profile -->
@@ -104,50 +103,45 @@
 <section class="bg-[#fffaf5] px-4 py-5">
     <div class="flex flex-wrap items-center justify-center gap-3">
 
-        <!-- All -->
-        <button class="rounded-full bg-[#ff4d0a] px-10 py-3 text-base font-semibold text-white">
+        <a href="#"
+           class="rounded-full bg-[#ff4d0a] px-10 py-3 text-base font-semibold text-white transition hover:bg-[#e94305]">
             All
-        </button>
+        </a>
 
-        <!-- Pizza -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
-            <span>🍕</span> Pizza
-        </button>
+        <a href="../categories/pizzaafterlogin.html"
+        class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+        <span>🍕</span> Pizza
+        </a>
 
-        <!-- Burgers -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+        <a href="../categories/burgerafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
             <span>🍔</span> Burgers
-        </button>
+        </a>
 
-        <!-- Pasta -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+       <a href="../categories/pastafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
             <span>🍝</span> Pasta
-        </button>
+        </a>
 
-        <!-- Noodles -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
-            <span>🍜</span> Noodles
-        </button>
-
-        <!-- Beverages -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
-            <span>🥤</span> Beverages
-        </button>
-
-        <!-- Desserts -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
-            <span>🍰</span> Desserts
-        </button>
-
-        <!-- Tacos -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+        <a href="../categories/tacosafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
             <span>🌮</span> Tacos
-        </button>
+        </a>
 
-        <!-- Combos -->
-        <button class="flex items-center gap-2 rounded-full border border-orange-100 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+        <a href="../categories/beveragesafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+            <span>🥤</span> Beverages
+        </a>
+
+        <a href="../categories/dessertafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
+            <span>🍰</span> Desserts
+        </a>
+
+         <a href="../categories/combosafterlogin.html"
+           class="flex items-center gap-2 rounded-full border border-orange-500 px-5 py-3 text-base font-medium text-gray-800 transition hover:bg-orange-100">
             <span>🎁</span> Combos
-        </button>
+        </a>
 
     </div>
 </section>
@@ -181,7 +175,7 @@
         <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-4 shadow-sm transition hover:shadow-md">
 
             <div class="relative h-56 w-full overflow-hidden rounded-xl">
-            <img src="./img/d2.png" alt="Margherita Pizza" class="h-full w-full object-cover">
+            <img src="./img/d2.png" alt="Cheese Burger" class="h-full w-full object-cover">
             </div>
 
             <h3 class="mt-2 font-bold text-slate-900">Cheese Burger</h3>
@@ -198,9 +192,9 @@
         <!-- 3. Creamy White Pasta -->
         <div class="flex h-full flex-col rounded-2xl border border-orange-100 bg-white p-4 shadow-sm transition hover:shadow-md">
 
-            <img src="./img/d3.png" alt="Margherita Pizza" class="h-full w-full rounded-xl object-cover">
+            <img src="./img/d3.png" alt="Classic Alfredo Pasta" class="h-full w-full rounded-xl object-cover">
 
-            <h3 class="mt-2 font-bold text-slate-900">Creamy White Pasta</h3>
+            <h3 class="mt-2 font-bold text-slate-900">Classic Alfredo Pasta</h3>
             <p class="mt-1 text-sm leading-5 text-gray-500">
                 Rich and creamy pasta with herbs and cheese.
             </p>
@@ -296,6 +290,7 @@
 
     </div>
 </section>
-
+<script src="../foodflow.js"></script>   <!-- Menu/, categories/, About/, Celebration/, dashboard/ pages -->
+<script src="./foodflow.js"></script>    <!-- indexafterlogin.html (root) -->
 </body>
 </html>

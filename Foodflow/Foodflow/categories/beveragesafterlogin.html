@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-[#fffaf5]">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
+       
+    <!-- FoodFlow Logo -->
+    <div class="flex items-center gap-5">
+
+    <!-- Chef Hat Icon -->
+     <i class="fa-solid fa-kitchen-set text-4xl text-orange-600"></i>
+    <!-- Logo Text -->
+    <div>
+        <h1 class="text-3xl font-bold text-slate-900">
+            Food<span class="text-orange-600">Flow</span>
+        </h1>
+
+        <p class="text-xs font-semibold">
+            From Kitchen to Doorstep
+        </p>
+    </div>
+
+    </div>
+
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-14 text-lg font-medium tracking-wider">
+            <a href="../index.html" class="hover:text-orange-600">Home</a>
+            <a href="#" class="text-orange-600">Menu</a>
+            <a href="../Celebration/celebration.html" class="hover:text-orange-600">
+                Celebrations
+            </a>
+            <a href="../My_orders/orders.php" class="hover:text-orange-600">My Orders</a>
+            <a href="../About/about.html" class="hover:text-orange-600">About Us</a>
+        </div>
+
+        <!-- Customer Profile -->
+        <div class="flex shrink-0 items-center gap-3">
+
+        <!-- Initials Circle -->
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-lg font-bold text-orange-600">
+        DA
+        </div>
+
+        <!-- Customer Name -->
+        <div>
+        <p class="text-base font-bold text-slate-900">
+            Divya Agarwal
+        </p>
+        <p class="text-sm text-gray-500">
+            Customer
+        </p>
+        </div>
+
+       
+
+    </nav>
+
+<!-- Burger Hero Banner -->
+<section class="relative h-[380px] w-full overflow-hidden" style="background-image: url('./img/beveragesbg.png');
+        background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <div class="absolute inset-0 bg-black/15"></div>
+
+    <!-- Banner Content -->
+    <div class="relative z-10 flex h-full items-center pl-40 pr-10">
+
+    <div class="max-w-2xl text-left">
+
+        <!-- Small Heading -->
+        <p class="mb-4 flex items-center gap-3
+                  text-base font-bold uppercase tracking-[0.25em]
+                  text-[#ff702e]">
+
+            <span class="h-[3px] w-10 bg-[#ff702e]"></span>
+            SIP FRESH. FEEL THE VIBE.
+            <span class="h-[3px] w-9 bg-[#ff702e]"></span>
+
+        </p>
+
+        <!-- Main Heading -->
+        <h1 class="text-6xl font-extrabold leading-tight
+                   tracking-tight text-[#fff1d6]
+                   drop-shadow-lg md:text-7xl">
+
+            Chill &
+            <span class="text-[#ff702e]"> Cheers</span>
+
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-5 max-w-xl text-lg font-semibold
+                  leading-relaxed text-[#fff8ed]
+                  drop-shadow-md md:text-xl">
+            A refreshing
+            <span class="text-[#ff702e]">escape</span>
+            in every glass, made just for you.
+        </p>
+
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Burger Collection Heading -->
+<section class="bg-[#fffaf5] px-7 pt-5 pb-4">
+
+    <div class="max-w-full">
+
+        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">
+            Our <span class="text-orange-600">Beverages Collection</span>
+        </h2>
+
+        <p class="mt-1 text-base font-medium text-slate-700">
+            Find your perfect burger, freshly prepared just for you.
+        </p>
+
+    </div>
+
+</section>
+<main>
+
+<!-- Burger Collection Cards -->
+<section class="bg-[#fffaf5] px-7 pb-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Card 1 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb1.png" alt="Thums up" class="h-48 w-full rounded-lg object-cover">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Unleash the Thunder!</h3>
+                <p class="text-sm text-gray-500 mt-1">Bold, refreshing cola with intense fizz, sparkling ice and a rich, chilled taste.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹49</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb2.png" alt="Sprite" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Refresh Your Senses!</h3>
+                <p class="text-sm text-gray-500 mt-1">Crisp lemon-lime soda with refreshing bubbles, chilled ice and a zesty mint twist.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹49</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb3.png" alt="Classic Iced Tea" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Classic Iced Tea</h3>
+                <p class="text-sm text-gray-500 mt-1">Refreshing chilled iced tea infused with zesty lemon, sparkling ice and fresh mint..</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹79</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb4.png" alt="Blue Lagoon" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Blue Lagoon</h3>
+                <p class="text-sm text-gray-500 mt-1">A refreshing blend of blue citrus syrup, zesty lemonade and sparkling soda served over chilled ice.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹99</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb5.png" alt="Classic Cold Coffee" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Classic Cold Coffee</h3>
+                <p class="text-sm text-gray-500 mt-1">Creamy chilled coffee blended with smooth milk and ice cream, topped with rich chocolate drizzle.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹119</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb6.png" alt="Blueberry Soda" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Blueberry Soda</h3>
+                <p class="text-sm text-gray-500 mt-1">Refreshing blueberry-flavoured soda with sparkling fizz, crushed ice and juicy blueberries.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹99</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb7.png" alt="Strawberry Mojito" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Strawberry Mojito</h3>
+                <p class="text-sm text-gray-500 mt-1">Sweet strawberries, zesty lime, fresh mint and sparkling soda for a fruity, refreshing twist.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹119</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="rounded-xl border border-orange-100 bg-white p-2.5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative">
+                <img src="./img/bb8.png" alt="Oreo Coffee Frappe" class="h-48 w-full object-cover rounded-lg">
+                <button onclick="toggleFavourite(this)" class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-500">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </button>
+            </div>
+            <div class="p-3">
+                <h3 class="font-bold text-slate-900">Oreo Coffee Frappe</h3>
+                <p class="text-sm text-gray-500 mt-1">Creamy Oreo coffee topped with whipped cream and chocolate drizzle.</p>
+                <div class="flex items-center justify-between mt-4">
+                    <span class="text-xl font-extrabold text-orange-600">₹149</span>
+                    <button class="bg-orange-600 text-white px-5 py-2 rounded-xl hover:bg-orange-700">Add</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Favourite Toggle -->
+<script>
+function toggleFavourite(button) {
+    const icon = button.querySelector("i");
+
+    icon.classList.toggle("fa-regular");
+    icon.classList.toggle("fa-solid");
+
+    if (icon.classList.contains("fa-solid")) {
+        button.classList.remove("text-gray-500");
+        button.classList.add("text-red-500");
+    } else {
+        button.classList.remove("text-red-500");
+        button.classList.add("text-gray-500");
+    }
+}
+</script>
+
+</main>
+<script src="../foodflow.js"></script>   <!-- Menu/, categories/, About/, Celebration/, dashboard/ pages -->
+
+</body>
+</html>

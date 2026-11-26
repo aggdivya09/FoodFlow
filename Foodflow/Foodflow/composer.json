@@ -1,0 +1,14 @@
+{
+    "name": "divyaagarwal/foodflow",
+    "description": "FoodFlow project",
+    "authors": [
+        {
+            "name": "aggdivya09",
+            "email": "aggdivya091@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.2",
+        "google/apiclient": "^2.20"
+    }
+}

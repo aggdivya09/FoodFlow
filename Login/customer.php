@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['role'] = $customer['role'];
 
                 // Redirect after successful login
-                header('Location: ../Dashboard/customer.html');
+                header('Location: ../Customer/dashboard.php');
                 exit;
 
             } else {
@@ -165,7 +165,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <!-- Login Button -->
                 <button type="submit"
-                        class="w-full rounded-2xl bg-[#ff4d0a] p-4 text-xl font-bold text-white hover:bg-orange-500">
+                        class="w-full rounded-2xl bg-[#ff4d0a] p-4
+                               text-xl font-bold text-white
+                               hover:bg-orange-500">
                     Login →
                 </button>
 
